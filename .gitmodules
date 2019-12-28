@@ -1,0 +1,3 @@
+[submodule "currency"]
+	path = currency
+	url = https://github.com/com-chain/currency
