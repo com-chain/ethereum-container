@@ -1,0 +1,14 @@
+{
+  "name": "Infra",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/com-chain/ethereum-container.git",
+  "author": "Mathieu Rousse @ Com-chain",
+  "license": "GPLv3",
+  "private": false,
+  "dependencies": {
+    "glob-promise": "3.4.0",
+    "solc": "^0.4",
+    "web3": "^1.0.0-beta.36"
+  }
+}
