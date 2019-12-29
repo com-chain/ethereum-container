@@ -7,8 +7,11 @@ RUN sh -c "echo \"deb https://dl.yarnpkg.com/debian/ stable main\" | tee /etc/ap
 RUN sh -c "curl -sL https://deb.nodesource.com/setup_11.x | bash - "
 RUN apt-get install -y nodejs yarn gcc g++ make
 
-RUN echo "deb http://ppa.launchpad.net/ethereum/ethereum/ubuntu artful main" >> /etc/apt/sources.list
+RUN echo "deb http://ppa.launchpad.net/ethereum/ethereum/ubuntu bionic main" >> /etc/apt/sources.list
+#RUN deb-src http://ppa.launchpad.net/ethereum/ethereum/ubuntu bionic main
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 2A518C819BE37D2C2031944D1C52189C923F6CA9
+#RUN deb http://ppa.launchpad.net/ethereum/ethereum/ubuntu bionic main
+#RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 2A518C819BE37D2C2031944D1C52189C923F6CA9
 RUN apt-get update
 RUN apt-get install -y -q ethereum solc
 
